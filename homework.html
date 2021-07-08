@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Music Player</title>
+    <Style>
+        .container {
+            width:500px; height: 250px; border:1px solid black; margin: 10px; padding: 5px
+        }
+        .container .inner-container {
+            width: 100px; height: 250px; margin-left: 400px;
+        }
+        .col {
+            width:20px;  float:left; margin: 20px;
+        }
+        .img {
+            width:250px; height:300px; float:left; padding:40px;
+        }
+    </Style>
+  </head>
+  <body>
+    <h1>Create Playlist</h1>
+    <form>
+      <label for="input-title">Title</label><br />
+      <input id="input-title" placeholder="Title" /><br />
+      <label for="input-description">Description</label><br />
+      <input id="input-description" placeholder="description" /><br />
+      <button id="btn" type="button">Submit</button>
+    </form>
+
+    <div class="container">
+        <div class="img">
+            <img src="./assets/img/spiderman.png" id="image" width=300px>
+        </div>
+        <div class="inner-container">
+            <div class="col">Title</div>
+            <div class="col">Artist</div>
+            <div class="col">Album</div>
+            <div class="col">
+                <button>Select</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./assets/js/alert.js"></script>
+  </body>
+ 
+</html>
